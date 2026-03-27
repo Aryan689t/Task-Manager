@@ -33,3 +33,8 @@ This application allows users to create, edit, manage, and track tasks with pers
 * Event-driven programming
 * State management
 * Local storage handling
+
+---
+
+## Live Demo
+-  https://aryan689t.github.io/Task-Manager/
