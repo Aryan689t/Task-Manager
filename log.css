@@ -1,0 +1,102 @@
+.main{
+   display:flex;
+}
+body{
+   background-color: #f4f6f8;
+}
+.heading{
+   background-color: #4a6cf7;
+}
+#h1{
+   color: white;
+   padding: 10px;
+   text-align: center;
+
+}
+.postbox{
+   display: flex;
+   flex-direction: column;
+   background-color:white;
+   border: 1px solid #ddd;
+   height:610px;
+   width:270px;
+   margin-top: 5px;
+}
+#posttitle{
+   text-align: center;
+   color: blue;
+   border: 1px solid #ddd;
+   padding: 10px;
+   height: 30px;
+   width: 269px;
+   flex:1;
+}
+.write{
+   flex:1;
+   margin:5px;
+   height: 400px;
+   width: auto;
+}
+.actions {
+   width: 120px;       /* control button area width */
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}#save, #del, #edit, #complete, #clrall {
+   width: 100%;   /* take full width of container */
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#save{
+   background-color: #4a6cf7;
+   color: white;
+}
+#clrall{
+   background-color: #e0e0e0;
+   color:#333
+}
+#del{
+   background-color: #e53935;
+   color: white;
+}
+#edit{
+   background-color: #90caf9;
+   color:#1a1a1a;
+}
+#complete{
+   background-color: #ffb74d;
+   color:#1a1a1a;
+}
+#postbox{
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+#postitile{
+   width:auto;
+   color: #eee;
+   position: sticky;
+}
+#postbox div {
+  display: block;
+  background-color: #fafafa;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+#postbox div {
+  word-wrap: break-word;
+}
+#postbox div.selected {
+  background-color: #dbe4ff;
+}
+.blog-item {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f5f5c0;
+}
+.blog-item:hover {
+  background-color: #e0e0a0;
+}
