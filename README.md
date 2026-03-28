@@ -24,6 +24,7 @@ This application allows users to create, edit, manage, and track tasks with pers
 * CSS
 * JavaScript (Vanilla JS)
 * Browser localStorage
+* Media Queries
 
 ---
 
