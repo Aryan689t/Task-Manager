@@ -19,7 +19,6 @@ body{
    background-color:white;
    border: 1px solid #ddd;
    height:610px;
-   width:270px;
    margin-top: 5px;
 }
 #posttitle{
@@ -28,23 +27,26 @@ body{
    border: 1px solid #ddd;
    padding: 10px;
    height: 30px;
-   width: 269px;
+   width: auto;
    flex:1;
+}
+.write textarea{
+   flex:none;
+   margin:5px;
+   height: 400px;
+   width: 100%;
 }
 .write{
    flex:1;
-   margin:5px;
-   height: 400px;
-   width: auto;
 }
 .actions {
-   width: 120px;       /* control button area width */
+   width: 120px;       
    margin-top: 10px;
    display: flex;
    flex-direction: column;
    gap: 10px;
 }#save, #del, #edit, #complete, #clrall {
-   width: 100%;   /* take full width of container */
+   width: 100%;   
    height: 50px;
    display: flex;
    align-items: center;
@@ -99,4 +101,66 @@ body{
 }
 .blog-item:hover {
   background-color: #e0e0a0;
+}
+@media (min-width: 901px){
+   .write textarea{
+      width: 1190px;
+   }
+   .postbox{
+      width: 270px;
+   }
+}
+@media (max-width: 900px){
+   .write textarea{
+      width:500px;
+      flex:none;
+   }
+   .postbox{
+      width:200px;
+   }
+   .actions{
+      width:120px;
+   }
+}
+@media (max-width: 650px) {
+   .main{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+   }
+   .postbox{
+      width:35%;
+      height:500px;
+      flex-shrink: 0;
+   }
+   .write{
+      width:65%;
+      height: 500px;
+      display:flex;
+      flex-shrink: 0;
+      margin:5px;
+   }
+   .write textarea{
+      margin:0px;
+      width:100%;
+      height: 100%;
+      box-sizing: border-box;
+   }
+  .actions {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 0;
+    margin-top: 0;
+  }
+  #save, #del, #edit, #complete, #clrall {
+    width: auto;
+    flex: 1;
+    min-width: 55px;
+    height: 40px;
+    font-size: 11px;
+  }
 }
